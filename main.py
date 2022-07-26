@@ -8,11 +8,11 @@ for word in engwords:
         words.append(word)
 
 target = words[randint(0, len(words))]
-cnt = 0
+cnt = 1
 print("your guesses have to be all lowercase. You have 5 tries")
 
 while True:
-    print("Try #"+str(cnt+1)+" — ", end="")
+    print("Try #"+str(cnt)+" — ", end="")
     guess = input("Your 5 letter word guess??")
     if cnt == 5:
         print("The word is "+target)
@@ -35,6 +35,4 @@ while True:
                 print("N", end="")
     print("")
     cnt+=1
-
-
 
